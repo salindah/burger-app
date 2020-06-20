@@ -3,7 +3,6 @@ import { render } from '@testing-library/react';
 
 import Aux from '../../../hoc/Aux';
 
-//This is a test comment.
 const orderSummary = (props) => {
 
     const ingredientSummary = Object.keys(props.ingredients)
