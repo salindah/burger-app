@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-
+import Button from '../../UI/Button/Button';
 import Aux from '../../../hoc/Aux';
 
 const orderSummary = (props) => {
@@ -21,7 +21,14 @@ const orderSummary = (props) => {
             <ul>
                 {ingredientSummary}
             </ul>
+            <p><strong>Total Price : {props.totalPrice}</strong></p>
             <p>Continue to checkout ?</p>
+            <Button 
+                clicked={props.purchaseCanceled}
+                btnType='Danger'>CANCEL</Button>
+            <Button 
+                clicked={props.purchaseContinued}
+                btnType='Success'>CONTINUE</Button>
         </Aux>
     );
 }
