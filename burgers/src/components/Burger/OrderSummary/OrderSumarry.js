@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import Button from '../../UI/Button/Button';
-import Aux from '../../../hoc/Aux';
+import Aux from '../../../hoc/Aux/Aux';
 
 const orderSummary = (props) => {
 
